@@ -1,0 +1,26 @@
+/*
+ * header-type.scss
+ * -----------------------------------------------
+*/
+
+@import "header-default";
+@import "header-floating";
+@import "header-floating-left-logo";
+@import "header-floating-sticky-bg-white";
+@import "header-floating-sticky-bg-dark";
+@import "header-floating-bg-dark-text-white";
+@import "header-floating-bg-white-text-dark";
+@import "header-logo-center";
+@import "header-vertical-nav";
+@import "header-3rows-elementor";
+
+
+body {
+  &.tm-dark-layout {
+    header#header {
+      .header-nav {
+        border-top-color: $dark-layout-default-bg-color;
+      }
+    }
+  }
+}

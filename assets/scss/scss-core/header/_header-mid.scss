@@ -1,0 +1,99 @@
+/*
+ * header-mid.scss
+ * -----------------------------------------------
+*/
+header#header {
+  .contact-info-box {
+    display: block;
+    //float: right;
+    .left-thumb {
+      float: left;
+      margin-right: 20px;
+    }
+    .media-body {
+      float: left;
+    }
+    @include media-breakpoint-down(md) {
+      display: block;
+      .left-thumb {
+        float: none;
+        margin-right: 0;
+      }
+      .media-body {
+        float: none;
+      }
+    }
+    .font-icon {
+      font-size: 36px;
+      margin-top: 5px;
+    }
+    .title {
+      margin-top: 0;
+      margin-bottom: .25rem;
+      @include media-breakpoint-down(md) {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    }
+    .subtitle {
+    }
+
+    &.big-icon {
+      .subtitle {
+        a {
+          color: #777;
+          font-weight: normal;
+        }
+      }
+    }
+
+    &.small-icon {
+      .font-icon {
+        font-size: 16px;
+        padding-left: 1px;
+        padding-right: 5px;
+        margin-top: 0;
+      }
+      .title {
+        font-size: 15px;
+      }
+      .subtitle {
+        font-size: 13px;
+      }
+    }
+  }
+  .header-middle {
+    > .container {
+    }
+    padding: 20px 0;
+    .header-mid-column3-container {
+      .element {
+        @media (max-width: $ele-breakpoint-tablet-max) {
+          margin-bottom: 20px;
+        }
+        @include media-breakpoint-down(lg) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+  .header-nav {
+    .header-nav-container {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+  }
+  .nav-side-icon-list {
+    margin-bottom:0;
+    display: inline-block;
+    @media (max-width: $ele-breakpoint-tablet-max) {
+      float: left;
+    }
+    > div {
+      display: inline-block;
+      padding: 20px 12px;
+      @media (max-width: $ele-breakpoint-tablet-max) {
+        padding: 13px 12px;
+      }
+    }
+  }
+}

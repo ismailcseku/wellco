@@ -1,0 +1,86 @@
+/*
+ * Shortcode: stretched-bg.scss
+ * -----------------------------------------------
+*/
+.tm-stretched-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  z-index: 0;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  &.tm-stretched-bg-both {
+    margin-left: -700px;
+    margin-right: -700px;
+    right: 0;
+  }
+  &.tm-stretched-bg-left {
+    margin-left: -700px;
+    right: 0;
+  }
+  &.tm-stretched-bg-right {
+    margin-right: -700px;
+    right: 0;
+  }
+}
+
+
+.tm-stretch-bg-theme-color1-left {
+  background: var(--theme-color1);
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 5000px;
+    height: 100%;
+    left: -5000px;
+    background: var(--theme-color1);
+  }
+}
+.tm-stretch-bg-theme-color1-right {
+  background: var(--theme-color1);
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 5000px;
+    height: 100%;
+    right: -5000px;
+    background: var(--theme-color1);
+  }
+}
+
+.tm-stretch-bg-theme-color2-left {
+  background: var(--theme-color2);
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 5000px;
+    height: 100%;
+    left: -5000px;
+    background: var(--theme-color2);
+  }
+}
+.tm-stretch-bg-theme-color2-right {
+  background: var(--theme-color2);
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 5000px;
+    height: 100%;
+    right: -5000px;
+    background: var(--theme-color2);
+  }
+}

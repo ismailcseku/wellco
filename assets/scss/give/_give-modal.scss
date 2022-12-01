@@ -1,0 +1,83 @@
+.mfp-bg {
+  background: #000000;
+}
+.modal-fade-slide.mfp-ready.mfp-bg {
+  opacity: 0.85;
+}
+
+.modal-fade-slide.give-modal .mfp-content,
+.give-modal .mfp-content {
+  width: 100%;
+  background: transparent;
+  max-width: 830px;
+  margin-top: 40px;
+  padding: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  div.give-form,
+  form.give-form {
+    background: #FFFFFF;
+    margin-bottom: 40px;
+    border-radius: 2px;
+  }
+  > .give-donation-grid-item-form,
+  > .give-form-type-multi {
+    max-width: 100%;
+    height: auto;
+    overflow: unset;
+    padding: 32px 40px;
+    @media(max-width: $ele-breakpoint-tablet-max) {
+      padding: 24px 32px;
+    }
+    @media(max-width: $ele-breakpoint-mobile-max) {
+      padding: 24px 16px;
+    }
+    > *:first-child {
+      margin-top: 0;
+    }
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.give-modal {
+  .mfp-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .mfp-content .mfp-close,
+    form.give-form button.mfp-close {
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    background-color: #333333;
+    outline: none;
+    opacity: 1;
+    border-radius: 2px;
+    &:hover {
+      background-color: darken(#333333, 10);
+    }
+  }
+  form[id*=give-form]{
+    .give-submit {
+      width: 100%;
+      color: var(--text-color-bg-theme-color1);
+      background: var(--theme-color1);
+      padding: 20px 30px;
+      outline: none;
+      border-radius: 30px;
+      width: 100%;
+      &:hover {
+        color: var(--text-color-bg-theme-color3);
+        background: var(--theme-color3);
+      }
+    }
+  }
+}

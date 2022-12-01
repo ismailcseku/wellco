@@ -1,0 +1,14 @@
+/*
+ * Shortcode: give-goal-progress.scss
+ * -----------------------------------------------
+*/
+
+$progress-height: 8px;
+.give-goal-progress {
+  .raised {
+    .income {
+      font-size: inherit;
+      line-height: normal;
+    }
+  }
+}

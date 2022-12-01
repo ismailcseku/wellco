@@ -1,0 +1,18 @@
+// Import bootstrap variables and mixins for reference
+@import "../scss-bootstrap/functions";
+@import "../scss-bootstrap/variables";
+@import "../scss-bootstrap/mixins";
+
+// Initialize Variables
+@import "../scss-core/mixins/transform";
+@import "../scss-core/mixins/mixins";
+@import "../scss-core/variables";
+
+
+
+// current theme styling
+@import "give-goal-progress";
+@import "single-give-form";
+@import "give-common";
+@import "give-modal";
+@import "give-details/loader";

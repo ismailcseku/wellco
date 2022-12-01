@@ -1,0 +1,36 @@
+/*
+ * background: theme-color
+ * -----------------------------------------------
+*/
+.tab-slider .nav.nav-pills a:hover,
+.tab-slider .nav.nav-pills a.active,
+.custom-nav-tabs > li > a:hover,
+.widget .tags a:hover,
+.blog-posts .post.style1 .entry-header .entry-date.entry-date-absolute,
+.title-dots span,
+.title-line-top:before,
+.become-a-volunteer-form-title  {
+  background: var(--theme-color1);
+}
+
+/*
+ * text: theme-color
+ * -----------------------------------------------
+*/
+.drop-caps.text-colored p:first-child:first-letter,
+.pager.theme-colored a {
+  color: var(----hover-theme-color);
+}
+/*
+ * border: theme-color
+ * -----------------------------------------------
+*/
+.widget .line-bottom:after,
+.widget .line-bottom:after,
+.pager.theme-colored a {
+  border: 1px solid var(--theme-color1);
+}
+
+.hr-divider {
+  border-top-color: rgba($theme-color1, .20) !important;;
+}

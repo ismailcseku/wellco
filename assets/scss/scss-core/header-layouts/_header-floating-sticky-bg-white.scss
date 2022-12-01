@@ -1,0 +1,29 @@
+header#header {
+  &.header-floating-sticky-bg-white {
+    .header-nav .navbar-scrolltofixed.tm-sticky-menu {
+      .menuzord-container {
+        background-color: #fff;
+        .menuzord-menu {
+          > li:not(.active):not(:hover) {
+            > a {
+              @media (min-width: $ele-breakpoint-desktop-min) {
+                color: #111;
+              }
+            }
+          }
+        }
+        .top-nav-search-btn .search-icon,
+        .top-nav-mini-cart-icon-container .top-nav-mini-cart-icon-contents .mini-cart-icon {
+          color: #111;
+
+        }
+        .hamburger-box .hamburger-inner, .hamburger-box .hamburger-inner:after, .hamburger-box .hamburger-inner:before {
+          background-color: #111;
+        }
+        .menuzord .showhide em{
+          background: #111;
+        }
+      }
+    }
+  }
+}

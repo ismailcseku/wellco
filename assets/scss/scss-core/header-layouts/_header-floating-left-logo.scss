@@ -1,0 +1,29 @@
+header#header {
+  &.header-layout-type-header-floating-left-logo {
+    @media (min-width: $ele-breakpoint-desktop-min) {
+      .header-nav {
+        border-bottom: 1px solid rgba(240, 240, 240, 0.2);
+      }
+    }
+
+    #top-primary-nav,
+    #top-primary-nav-sticky,
+    #top-primary-nav-clone,
+    #top-primary-nav-sticky-clone {
+      .menuzord-menu {
+        >li {
+          > a {
+            color: #fff;
+          }
+          &:hover {
+            > a {
+              @media (max-width: $ele-breakpoint-tablet-max) {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

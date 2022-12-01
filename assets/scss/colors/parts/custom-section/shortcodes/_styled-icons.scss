@@ -1,0 +1,205 @@
+/*
+ * Shortcode: styled-icons.scss
+ * -----------------------------------------------
+*/
+
+.styled-icons {
+  &.icon-theme-colored1 {
+    &.icon-dark {
+      a {
+        background: var(--theme-color1);
+        &:hover {
+          color: #fff;
+          &:after {
+            box-shadow: inset 0 0 0 50px darken($theme-color1, 10%);
+          }
+        }
+      }
+
+      &.icon-bordered {
+        a {
+          background: transparent;
+          &:hover {
+            &:after {
+              box-shadow: inset 0 0 0 50px var(--theme-color1);
+            }
+          }
+        }
+      }
+    }
+    &.icon-gray {
+      a {
+        color: var(--theme-color1);
+        &:hover {
+          color: #fff;
+          &:after {
+            box-shadow: inset 0 0 0 50px darken($theme-color1, 10%);
+          }
+        }
+      }
+
+      &.icon-bordered {
+        a {
+          color: var(--theme-color1);
+          border: 1px solid var(--theme-color1);
+          &:hover {
+            color: #fff;
+            &:after {
+              box-shadow: inset 0 0 0 50px var(--theme-color1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  &.icon-theme-colored2 {
+    &.icon-dark {
+      a {
+        background: var(--theme-color2);
+        &:hover {
+          color: #fff;
+          &:after {
+            box-shadow: inset 0 0 0 50px darken($theme-color2, 10%);
+          }
+        }
+      }
+
+      &.icon-bordered {
+        a {
+          background: transparent;
+          &:hover {
+            &:after {
+              box-shadow: inset 0 0 0 50px var(--theme-color2);
+            }
+          }
+        }
+      }
+    }
+    &.icon-gray {
+      a {
+        color: var(--theme-color2);
+        &:hover {
+          color: #fff;
+          &:after {
+            box-shadow: inset 0 0 0 50px darken($theme-color2, 10%);
+          }
+        }
+      }
+
+      &.icon-bordered {
+        a {
+          color: var(--theme-color2);
+          border: 1px solid var(--theme-color2);
+          &:hover {
+            color: #fff;
+            &:after {
+              box-shadow: inset 0 0 0 50px var(--theme-color2);
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  &.icon-theme-colored3 {
+    &.icon-dark {
+      a {
+        background: var(--theme-color3);
+        &:hover {
+          color: #fff;
+          &:after {
+            box-shadow: inset 0 0 0 50px darken($theme-color3, 10%);
+          }
+        }
+      }
+
+      &.icon-bordered {
+        a {
+          background: transparent;
+          &:hover {
+            &:after {
+              box-shadow: inset 0 0 0 50px var(--theme-color3);
+            }
+          }
+        }
+      }
+    }
+    &.icon-gray {
+      a {
+        color: var(--theme-color3);
+        &:hover {
+          color: #fff;
+          &:after {
+            box-shadow: inset 0 0 0 50px darken($theme-color3, 10%);
+          }
+        }
+      }
+
+      &.icon-bordered {
+        a {
+          color: var(--theme-color3);
+          border: 1px solid var(--theme-color3);
+          &:hover {
+            color: #fff;
+            &:after {
+              box-shadow: inset 0 0 0 50px var(--theme-color3);
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  &.icon-theme-colored4 {
+    &.icon-dark {
+      a {
+        background: var(--theme-color4);
+        &:hover {
+          color: #fff;
+          &:after {
+            box-shadow: inset 0 0 0 50px darken($theme-color4, 10%);
+          }
+        }
+      }
+
+      &.icon-bordered {
+        a {
+          background: transparent;
+          &:hover {
+            &:after {
+              box-shadow: inset 0 0 0 50px var(--theme-color4);
+            }
+          }
+        }
+      }
+    }
+    &.icon-gray {
+      a {
+        color: var(--theme-color4);
+        &:hover {
+          color: #fff;
+          &:after {
+            box-shadow: inset 0 0 0 50px darken($theme-color4, 10%);
+          }
+        }
+      }
+
+      &.icon-bordered {
+        a {
+          color: var(--theme-color4);
+          border: 1px solid var(--theme-color4);
+          &:hover {
+            color: #fff;
+            &:after {
+              box-shadow: inset 0 0 0 50px var(--theme-color4);
+            }
+          }
+        }
+      }
+    }
+  }
+}

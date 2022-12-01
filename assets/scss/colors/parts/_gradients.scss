@@ -1,0 +1,80 @@
+/*
+ *  Gradients BG+BGTransparent Color
+ * -----------------------------------------------
+*/
+
+@mixin gradient-vertical ($startColor: #eee, $endColor: white) {
+  background-color: $startColor;
+  background: -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor));
+  background: -webkit-linear-gradient(top, $startColor, $endColor);
+  background: -moz-linear-gradient(top, $startColor, $endColor);
+  background: -ms-linear-gradient(top, $startColor, $endColor);
+  background: -o-linear-gradient(top, $startColor, $endColor);
+}
+@mixin gradient-horizontal ($startColor: #eee, $endColor: white) {
+  background: $startColor;
+  background: -webkit-gradient(linear, left top, right top, from($startColor), to($endColor));
+  background: -webkit-linear-gradient(left, $startColor, $endColor);
+  background: -moz-linear-gradient(left, $startColor, $endColor);
+  background: -ms-linear-gradient(left, $startColor, $endColor);
+  background: -o-linear-gradient(left, $startColor, $endColor);
+}
+
+
+/* Gradient BG Colors */
+.bg-theme-colored1-gradient {
+  @include gradient-vertical($theme-color1, lighten($theme-color1, 15%));
+}
+.bg-theme-colored1-gradient-horizontal {
+  @include gradient-horizontal($theme-color1, lighten($theme-color1, 15%));
+}
+
+.bg-theme-colored12-gradient {
+  @include gradient-vertical($theme-color1, $theme-color2);
+}
+.bg-theme-colored12-gradient-horizontal {
+  @include gradient-horizontal($theme-color1, $theme-color2);
+}
+
+
+/* -------- layer overlay gradient Color1 ---------- */
+.layer-overlay {
+ &.overlay-theme-colored1-gradient {
+   &::before {
+     @include gradient-horizontal(rgba($theme-color1,.90%), rgba(lighten($theme-color1, 20%),90))
+   }
+ }
+}
+
+
+
+/* -------- layer overlay gradient Color2 ---------- */
+.layer-overlay {
+ &.overlay-theme-colored2-gradient {
+   &::before {
+     @include gradient-horizontal(rgba($theme-color2,.90%), rgba(lighten($theme-color2, 20%),90))
+   }
+ }
+}
+
+
+
+/* -------- layer overlay gradient Color Combined 12 ---------- */
+.layer-overlay {
+ &.overlay-theme-colored12-gradient {
+   &::before {
+     @include gradient-horizontal(rgba($theme-color1,.90), rgba($theme-color2,.90))
+   }
+ }
+}
+
+
+
+/* -------- layer overlay gradient Color Combined 21 ---------- */
+.layer-overlay {
+ &.overlay-theme-colored21-gradient {
+   &::before {
+     @include gradient-horizontal(rgba($theme-color2,.90), rgba($theme-color1,.90))
+   }
+ }
+}

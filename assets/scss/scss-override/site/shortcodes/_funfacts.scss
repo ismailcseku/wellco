@@ -1,0 +1,66 @@
+/*
+ * Shortcode: funfacts.scss
+ * -----------------------------------------------
+*/
+.funfact-title {
+  padding: 53px 50px;
+  margin-right: 60px;
+  position: relative;
+  padding-right: 0;
+  background-color: var(--theme-color1);
+  @include media-breakpoint-down(md) {
+    padding: 20px;
+    margin-right: 0;
+    text-align: center;
+  }
+  .title {
+    color: #fff;
+    font-size: 26px;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  @include media-breakpoint-up(md) {
+    &:before {
+      content: "";
+      position: absolute;
+      border-style: solid;
+      border-width: 215px 60px 0 0;
+      top: 0;
+      right: -60px;
+      border-color: var(--theme-color1) transparent transparent transparent;
+    }
+  }
+}
+.funfact-current-theme-style1 {
+  .icon {
+    line-height: 36px;
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+    &:after {
+      content: "";
+      width: 75px;
+      height: 75px;
+      background: linear-gradient(145deg, #efc94c, #338f7a);
+      left: -40px;
+      top: -20px;
+      position: absolute;
+      border-radius: 50%;
+      z-index: -1;
+      opacity: 0.3;
+      @include transition(all .5s);
+      @include transform(scale(1));
+    }
+  }
+  &:hover {
+    .icon {
+      &:after {
+        @include transform(scale(1.2));
+      }
+    }
+  }
+}
+.funfact-current-theme-style2 {
+  text-align: center;
+}

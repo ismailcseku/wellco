@@ -1,0 +1,36 @@
+/*
+ * header-other.scss
+ * -----------------------------------------------
+*/
+header#header {
+  .header-nav {
+    .header-nav-container {
+      background-color:#fff;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+  }
+  .nav-side-icon-list {
+    display: inline-block;
+    @media (max-width: $ele-breakpoint-tablet-max) {
+      float: left;
+    }
+    > div {
+      padding: 0 12px;
+      margin-top: -5px;
+
+      .custom-button {
+        margin-top: -5px;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+  .navbar-icons-responsive {
+    margin: 0;
+    list-style: none;
+    li {
+      display: block !important;
+    }
+  }
+}

@@ -1,0 +1,129 @@
+.get-quote__progress {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 23px;
+  margin-bottom: 50px;
+}
+
+.get-quote__progress-single {
+  position: relative;
+  display: block;
+}
+
+.get-quote__progress-title {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 14px;
+}
+
+.get-quote__progress .bar {
+  position: relative;
+  width: 100%;
+  height: 11px;
+  background-color: white;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  border: 1px solid #dfe3e7;
+}
+
+.get-quote__progress .bar-inner {
+  position: relative;
+  display: block;
+  width: 0px;
+  height: 11px;
+  border-radius: 5px;
+  background-image: -moz-linear-gradient(0deg, #015fc9 0%, #0ce0ff 100%);
+  background-image: -webkit-linear-gradient(0deg, #015fc9 0%, #0ce0ff 100%);
+  background-image: -ms-linear-gradient(0deg, #015fc9 0%, #0ce0ff 100%);
+  -webkit-transition: all 1500ms ease;
+  -ms-transition: all 1500ms ease;
+  -o-transition: all 1500ms ease;
+  -moz-transition: all 1500ms ease;
+  transition: all 1500ms ease;
+}
+
+.get-quote__progress .count-text {
+  position: absolute;
+  right: -30px;
+  bottom: -8px;
+  opacity: 0;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  border-radius: 50%;
+  background-color: #16243d;
+  width: 34px;
+  height: 34px;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.get-quote__progress .bar-inner.counted .count-text {
+  opacity: 1;
+}
+
+.get-quote__balance-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--headings-color);
+}
+
+.get-quote__balance {
+  font-size: 16px;
+}
+
+.get-quote__btn {
+  border: none;
+}
+
+
+/* insur get balance updated css */
+.get-quote__progress-range .irs-single,
+.get-quote__progress-range .irs-from,
+.get-quote__progress-range .irs-to {
+  display: none;
+}
+
+.get-quote__progress-range .irs--flat {
+  height: 29px;
+}
+
+.get-quote__progress-range .irs--flat .irs-handle,
+.get-quote__progress-range .irs--flat .irs-line,
+.get-quote__progress-range .irs--flat .irs-bar {
+  top: 0;
+}
+
+.get-quote__progress-range .irs--flat .irs-line {
+  height: 12px;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dfe3e7;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.get-quote__progress-range .irs--flat .irs-bar {
+  height: 12px;
+  border-radius: 6px;
+  background-image: linear-gradient(90deg, var(--theme-color2) 0%, var(--theme-color1) 100%);
+}
+
+.get-quote__progress-range .irs--flat .irs-handle {
+  height: 29px;
+  width: 29px;
+  background-color: var(--theme-color2);
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  top: -9px;
+}
+
+.get-quote__progress-range .irs--flat .irs-handle i {
+  display: none;
+}

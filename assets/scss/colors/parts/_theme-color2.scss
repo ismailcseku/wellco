@@ -1,0 +1,339 @@
+/* -------- Text Theme Color ---------- */
+.text-theme-colored2 {
+  color: var(--theme-color2) !important;
+}
+.text-hover-theme-colored2 {
+  &:hover {
+    color: var(--theme-color2) !important;
+  }
+}
+
+/* -------- border-theme-color ---------- */
+.border-theme-colored2 {
+  border-color: var(--theme-color2) !important;
+}
+.border-1px-theme-colored2 {
+  border: 1px solid var(--theme-color2);
+}
+
+
+
+/* -------- bg-theme-color ---------- */
+.bg-theme-colored2 {
+  background-color: var(--theme-color2) !important;
+}
+.bg-hover-theme-colored2 {
+  &:hover {
+    background: var(--theme-color2) !important;
+    border-color: var(--theme-color2) !important;
+    color: $white-base !important;
+    
+    h1,h2,h3,h4,h5,h6,p,a,i {
+      color: $white-base !important;
+    }
+  }
+}
+.list-icon.theme-colored2.square li i,
+.list-icon.theme-colored2.rounded li i {
+  background: var(--theme-color2);
+}
+/* -------- lighter/darker bg Color ---------- */
+.bg-theme-colored2-lighter2 {
+  background-color: lighten($theme-color2, 2%) !important;
+}
+.bg-theme-colored2-lighter3 {
+  background-color: lighten($theme-color2, 3%) !important;
+}
+.bg-theme-colored2-darker2 {
+  background-color: darken($theme-color2, 2%) !important;
+}
+.bg-theme-colored2-darker3 {
+  background-color: darken($theme-color2, 3%) !important;
+}
+
+/* -------- Transparent bg Color ---------- */
+.bg-theme-colored2-transparent-9 {
+  background-color: rgba($theme-color2, .90) !important;
+}
+.bg-theme-colored2-transparent-8 {
+  background-color: rgba($theme-color2, .80) !important;
+}
+.bg-theme-colored2-transparent-7 {
+  background-color: rgba($theme-color2, .70) !important;
+}
+
+/* -------- btn-themr-color ---------- */
+.text-theme-colored2 {
+  .btn-plain-text,
+  .btn-plain-text-with-arrow {
+      color: var(--theme-color2) !important;
+  }
+}
+
+/* -------- layer overlay Color ---------- */
+.layer-overlay {
+  /* .overlay-theme-colored2 */
+  &.overlay-theme-colored2 {
+    &::before {
+      background-color: rgba($theme-color2, .80) !important;
+    }
+  }
+  &.overlay-theme-colored2-1 {
+    &::before {
+      background-color: rgba($theme-color2, .10);
+    }
+  }
+  &.overlay-theme-colored2-2 {
+    &::before {
+      background-color: rgba($theme-color2, .20);
+    }
+  }
+  &.overlay-theme-colored2-3 {
+    &::before {
+      background-color: rgba($theme-color2, .30);
+    }
+  }
+  &.overlay-theme-colored2-4 {
+    &::before {
+      background-color: rgba($theme-color2, .40);
+    }
+  }
+  &.overlay-theme-colored2-5 {
+    &::before {
+      background-color: rgba($theme-color2, .50);
+    }
+  }
+  &.overlay-theme-colored2-6 {
+    &::before {
+      background-color: rgba($theme-color2, .60);
+    }
+  }
+  &.overlay-theme-colored2-7 {
+    &::before {
+      background-color: rgba($theme-color2, .70);
+    }
+  }
+  &.overlay-theme-colored2-8 {
+    &::before {
+      background-color: rgba($theme-color2, .80);
+    }
+  }
+  &.overlay-theme-colored2-9 {
+    &::before {
+      background-color: rgba($theme-color2, .90);
+    }
+  }
+}
+
+
+
+
+/*
+ * Shortcode: styled-icons Theme Colored
+ * -----------------------------------------------
+*/
+.icon-theme-colored2 {
+  a {
+    color: var(--theme-color2);
+  }
+
+  &.icon-bordered {
+    a {
+      border-color: var(--theme-color2);
+
+      &:hover {
+        background-color: var(--theme-color2);
+        color: $white-base;
+      }
+    }
+  }
+
+  &.icon-dark {
+    a {
+      background-color: var(--theme-color2);
+      color: $white-base;
+
+      &:hover {
+        background-color: darken($theme-color2, 10%);
+      }
+    }
+
+    &.icon-bordered {
+      a {
+        border-color: var(--theme-color2);
+        color: var(--theme-color2);
+
+        &:hover {
+          background-color: var(--theme-color2);
+          border-color: var(--theme-color2);
+          color: $white-base;
+        }
+      }
+    }
+  }
+
+  &.icon-gray {
+    a {
+      color: var(--theme-color2);
+
+      &:hover {
+        color: darken($theme-color2, 10%);
+      }
+    }
+
+    &.icon-bordered {
+      a {
+        color: var(--theme-color2);
+
+        &:hover {
+          background-color: $gray-lighter;
+          border-color: $gray-lighter;
+          color: var(--theme-color2);
+        }
+      }
+    }
+  }
+}
+
+.icon-hover-theme-colored2 {
+  a {
+    &:hover {
+      background-color: var(--theme-color2);
+      border-color: var(--theme-color2);
+      color: $white-base;
+    }
+  }  
+}
+
+/*
+ * Shortcode: Icon Boxes Theme Colored
+ * -----------------------------------------------
+*/
+$icon-box: '.icon-box.iconbox-theme-colored2';
+.icon-box{
+  &.iconbox-theme-colored2 {
+    .icon {
+      color: var(--theme-color2);
+
+      &.icon-border-effect {
+        &::after {
+          box-shadow: 0 0 0 3px var(--theme-color2);
+        }
+      }
+
+      &.icon-bordered {
+        border-color: var(--theme-color2);
+      
+        @at-root {
+          #{$icon-box}:hover .icon {
+            &.icon-bordered {
+              background-color: var(--theme-color2);
+              color: $white-base;
+            }
+          }
+        }
+      }
+
+      &.icon-gray {
+        &.icon-bordered {
+          border-color: $gray-lighter;
+        }
+      
+        @at-root {
+          #{$icon-box}:hover .icon {
+            &.icon-gray {
+              background-color: var(--theme-color2);
+              color: $white-base;
+
+              //icon bordered
+              &.icon-bordered {
+                background-color: var(--theme-color2);
+                border-color: var(--theme-color2);
+                color: $white-base;
+              }
+            }
+          }
+        }
+      }
+
+      &.icon-dark {
+        background-color: var(--theme-color2);
+        color: $white-base;
+
+        &.icon-bordered {
+          background-color: transparent;
+          border-color: var(--theme-color2);
+          color: var(--theme-color2);
+        }
+      
+        @at-root {
+          #{$icon-box}:hover .icon {
+            &.icon-dark {
+              color: $white-base;
+
+              //icon bordered
+              &.icon-bordered {
+                background-color: var(--theme-color2);
+                border-color: var(--theme-color2);
+                color: $white-base;
+              }
+            }
+          }
+        }
+      }
+
+
+
+      &.icon-white {
+        background-color: $white-base;
+        color: var(--theme-color2);
+
+        &.icon-bordered {
+          background-color: transparent;
+          border-color: var(--theme-color2);
+          color: $white-base;
+        }
+      
+        @at-root {
+          #{$icon-box}:hover .icon {
+            &.icon-white {
+              background-color: var(--theme-color2);
+              color: $white-base;
+
+              //icon bordered
+              &.icon-bordered {
+                background-color: var(--theme-color2);
+                border-color: var(--theme-color2);
+                color: $white-base;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.iconbox-border {
+      border-color: var(--theme-color2);
+    }
+  }
+}
+
+
+.line-bottom-theme-colored2 {
+	&:after {
+		background: var(--theme-color2);
+	}
+}
+/*
+ * widget
+ * -----------------------------------------------
+*/
+.widget, footer#footer .widget {
+  .widget-title {
+    &.widget-title-line-bottom.line-bottom-theme-colored2 {
+      &:after {
+        background: var(--theme-color2);
+      }
+    }
+  }
+}

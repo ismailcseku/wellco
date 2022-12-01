@@ -1,0 +1,209 @@
+.give_error,
+.give_warning {
+  font-size: 14px;
+  line-height: 24px;
+  strong {
+    font-weight: 600;
+  }
+}
+
+.single-give_forms .give_forms {
+  max-width: 1230px;
+  margin: 0px auto;
+}
+
+
+form[id*=give-form],
+div[id*=give-form] {
+  legend,
+  .give-label {
+    font-size: $body-font-size;
+    font-weight: $body-font-bold;
+  }
+  .give-form-title {
+    margin-bottom: 16px;
+  }
+  .give-input {
+    height: form-control-height();
+  }
+  .give-custom-amount-text {
+    display: none;
+  }
+  .give-donation-amount {
+    margin-bottom: 30px;
+    .give-currency-symbol.give-currency-position-before {
+      border: none;
+    }
+    .give-currency-symbol,
+    #give-amount-text {
+      height: form-control-height();
+      color: #111;
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .give-currency-symbol {
+      color: var(--text-color-bg-theme-color1);
+      background-color: var(--theme-color1);
+      border-radius: 2px 0 0 2px;
+    }
+    #give-amount-text {
+      padding: 0 20px;
+      border-radius: 0 2px 2px 0;
+    }
+  }
+  .form-row {
+    input[type=text],
+    input[type=tel],
+    input[type=email],
+    input[type=url],
+    input[type=password],
+    select,
+    textarea {
+      padding: 16px 20px;
+      border-color: rgba(0, 0, 0, 0.1);
+      border-radius: 2px;
+      border: 1px solid #ddd;
+    }
+  }
+  .give-total-wrap,
+  #give-final-total-wrap {
+    margin: 15px 0 30px;
+    .give-donation-amount,
+    &.form-wrap {
+      display: flex;
+    }
+    .give-donation-amount .give-currency-symbol.give-currency-position-before {
+      border: none;
+    }
+    .give-currency-symbol,
+    #give-amount,
+    .give-donation-total-label,
+    .give-final-total-amount {
+      display: flex;
+      align-items:center;
+      height: form-control-height();
+      color: var(--theme-color1);
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .give-currency-symbol,
+    .give-donation-total-label {
+      color: var(--text-color-bg-theme-color1);
+      background: var(--theme-color1);
+      border-radius: 2px 0 0 2px;
+    }
+    .give-donation-amount #give-amount {
+      padding: 0 16px;
+    }
+    .give-donation-total-label {
+      color: var(--text-color-bg-theme-color1);
+      background: var(--theme-color1);
+      font-size: 14px;
+      white-space: nowrap;
+      margin: 0;
+      padding-right: 12px;
+    }
+    #give-amount,
+    .give-final-total-amount {
+      width: 100%;
+      border-radius: 0 2px 2px 0;
+    }
+  }
+  #give_terms,
+  #give_offline_payment_info {
+    font-size: 12px;
+    margin: 0 0 15px;
+    > * {
+      line-height: unset;
+      margin: 12px 0;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    ul, ol {
+      padding-left: 28px;
+    }
+  }
+
+  #give-gateway-radio-list > li {
+    input[type=radio] {
+      display: none;
+    }
+    label {
+      color: #333;
+      position: relative;
+      padding-left: 20px;
+      @include transition( all .3s ease);
+      &:hover {
+        color: var(--link-color);
+      }
+      &:before {
+        content: "";
+        box-shadow: 0 0 4px #111;
+        width: 12px;
+        height: 12px;;
+        border-radius: 12px;
+        top: 4px;
+        left: 0;
+        position: absolute;
+        @include transition( all .3s ease);
+      }
+      &:after {
+        content: "";
+        background: var(--theme-color1);
+        border-radius: 10px;
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        top: 6px;
+        left: 2px;
+        opacity: 0;
+        @include transition( all .3s ease);
+      }
+    }
+    &.give-gateway-option-selected label {
+      color: var(--link-color);
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.mfp-wrap #give-donation-level-button-wrap,
+.single-give_forms #give-donation-level-button-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  grid-gap: 5px;
+  > li {
+    margin: 0;
+  }
+  input[type="submit"],
+  .give_submit,
+  .give-btn {
+    font-size: 1rem;
+    font-weight: $body-font-bold;
+    line-height: $line-height-base;
+    margin: 0;
+    padding: 0.9rem 1.0rem;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    @include transition(all .3s ease);
+    &:hover {
+      background-color: var(--theme-color3);
+      color: var(--text-color-bg-theme-color3);
+    }
+    &.give-default-level {
+      background-color: var(--theme-color1);
+      color: var(--text-color-bg-theme-color1);
+    }
+    &.give-btn-level-custom {
+      line-height: 1;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+/*
+ * shop-catalog-layouts.scss
+ * -----------------------------------------------
+*/
+$wc-icon-color-default: "";
+$wc-icon-color-hover: "-white";
+//$wc-icon-color-hover: "";
+$wc-icon-bg-color-default: #fff;
+$wc-icon-bg-color-hover: var(--theme-color1);
+.woocommerce {
+  .carousel-layout {
+    &.owl-carousel {
+      .owl-item {
+        .thumb {
+          img {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}
+.woocommerce {
+  .yith-buttons {
+    li {
+      .blockUI.blockOverlay,
+      .loader {
+        background: #{$wc-icon-bg-color-default}!important;
+        opacity: 1!important;
+      }
+      .blockUI.blockOverlay:before,
+      .loader:before {
+        content: "";
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        margin: 0 8px 0 0;
+        border: 0;
+        color: #000;
+        font-size: 0;
+        padding: 0;
+        line-height: 38px;
+        height: 38px;
+        width: 38px;
+        vertical-align: top;
+        margin: 0;
+        background: #{$wc-icon-bg-color-default} url('../../images/shop/shopping-cart-loading#{$wc-icon-color-default}.svg') no-repeat scroll center 10px;
+        background-size: 20px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+        @include transition(all 500ms ease 0s);
+      }
+
+      .wishlist-fragment .blockUI.blockOverlay::before,
+      .yith-wcwl-popup-form .blockUI.blockOverlay::before{
+        display: block;
+      }
+      &:hover {
+        .blockUI.blockOverlay:before,
+        .loader:before {
+          background-color: #{$wc-icon-bg-color-hover};
+          background-image: url('../../images/shop/shopping-cart-loading#{$wc-icon-color-hover}.svg');
+        }
+      }
+    }
+  }
+}

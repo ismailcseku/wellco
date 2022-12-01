@@ -1,0 +1,38 @@
+/*
+ * footer-top-callout.scss
+ * -----------------------------------------------
+*/
+#footer-top-callout-wrap {
+  background-color: #daefe9;
+  .container, .container-fluid {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  } 
+  .callout-icon {
+    &.icon-left {
+      padding-right: 20px;
+    }
+    &.icon-top {
+      margin-bottom: 20px;
+    }
+    i {
+      font-size: 48px;
+      margin-top: 5px;
+    }
+  }
+  .footer-top-callout-inner {
+  }
+  .callout-content {
+    color: #7d7777;
+    font-size: 18px;
+  }
+  .button-right {
+    .callout-content {
+      p {
+        margin-bottom: 0;
+      }
+    }
+    .callout-button {
+    }
+  }
+}

@@ -1,0 +1,55 @@
+
+.tm-accordion {
+
+  //classic
+  &.accordion-classic {
+  }
+
+  //gradient
+  &.accordion-gradient {
+    &.accordion-theme-colored1 {
+      .card {
+        .card-header {
+          .title:not(.collapsed) {
+            background: var(--theme-color1);
+            background: linear-gradient(0deg, lighten($theme-color1, 0%) 0%, lighten($theme-color1, 15%) 45%, lighten($theme-color1, 25%) 100%);
+            color: var(--text-color-bg-theme-color1);
+          }
+        }
+      }
+    }
+    &.accordion-theme-colored2 {
+      .card {
+        .card-header {
+          .title:not(.collapsed) {
+            background: var(--theme-color2);
+            background: linear-gradient(0deg, lighten($theme-color2, 0%) 0%, lighten($theme-color2, 15%) 45%, lighten($theme-color2, 25%) 100%);
+            color: var(--text-color-bg-theme-color2);
+          }
+        }
+      }
+    }
+    &.accordion-theme-colored3 {
+      .card {
+        .card-header {
+          .title:not(.collapsed) {
+            background: var(--theme-color3);
+            background: linear-gradient(0deg, lighten($theme-color3, 0%) 0%, lighten($theme-color3, 15%) 45%, lighten($theme-color3, 25%) 100%);
+            color: var(--text-color-bg-theme-color3);
+          }
+        }
+      }
+    }
+    &.accordion-theme-colored4 {
+      .card {
+        .card-header {
+          .title:not(.collapsed) {
+            background: var(--theme-color4);
+            background: linear-gradient(0deg, lighten($theme-color4, 0%) 0%, lighten($theme-color4, 15%) 45%, lighten($theme-color4, 25%) 100%);
+            color: var(--text-color-bg-theme-color4);
+          }
+        }
+      }
+    }
+  }
+}
