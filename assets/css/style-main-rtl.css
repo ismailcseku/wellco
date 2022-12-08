@@ -9679,43 +9679,45 @@ table td, table th {
   border-radius: 0.2rem;
 }
 
-.btn, .woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart):not([name=apply_coupon]), .woosw-item .button, .woosw-item .added_to_cart, .woosc_table .button, .woosc_table .added_to_cart {
-  font-size: var(--btn-font-size);
-  line-height: 1.4;
-  color: #ffffff;
-  padding: 1.2rem 3.7rem;
-  font-family: var(--font-current-theme1);
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  overflow: hidden;
-  text-align: center;
-  text-transform: uppercase;
-  border-radius: 0;
+.btn, .woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart) {
+  border-radius: 5px;
   border-width: 0;
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-bold);
+  line-height: 1.9;
+  letter-spacing: 0.05rem;
+  padding: 1rem 2.2rem;
   overflow: hidden;
+  text-transform: capitalize;
   display: inline-block;
+  white-space: nowrap;
   transition: all 0.2s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn, .woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart):not([name=apply_coupon]), .woosw-item .button, .woosw-item .added_to_cart, .woosc_table .button, .woosc_table .added_to_cart {
+  .btn, .woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart) {
     transition: none;
   }
 }
-.btn.focus, .btn:focus, .woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart):not([name=apply_coupon]).focus, .woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart):not([name=apply_coupon]):focus, .woosw-item .button.focus, .woosw-item .button:focus, .woosw-item .added_to_cart.focus, .woosw-item .added_to_cart:focus, .woosc_table .button.focus, .woosc_table .button:focus, .woosc_table .added_to_cart.focus, .woosc_table .added_to_cart:focus {
+.btn.focus, .btn:focus, .woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart).focus, .woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart):focus {
   box-shadow: none !important;
 }
-.btn i, .woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart):not([name=apply_coupon]) i, .woosw-item .button i, .woosw-item .added_to_cart i, .woosc_table .button i, .woosc_table .added_to_cart i {
+.btn i, .woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart) i {
   margin-left: 5px;
+}
+@media (max-width: 575.98px) {
+  .btn, .woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart) {
+    padding: 1.1rem 1.5rem;
+  }
 }
 
 .btn-group-xs > .btn, .btn-xs {
-  padding: 0.5rem 1.2rem;
-  font-size: 0.75rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.85rem;
 }
 
 .btn-group-sm > .btn, .btn-sm {
-  padding: 1rem 2.4rem;
-  font-size: 0.75rem;
+  padding: 0.75rem 1.7rem;
+  font-size: 0.9rem;
 }
 
 .btn-group-lg > .btn, .btn-lg {
@@ -9737,19 +9739,10 @@ table td, table th {
 }
 
 .btn-light, .btn-outline-light {
-  background-color: #F7F4ED;
-  border-color: #F7F4ED;
-  box-shadow: none;
-  font-family: var(--font-current-theme1);
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 14px;
-  color: #164333;
+  box-shadow: 0 7px 20px rgba(170, 170, 170, 0.2);
 }
 .btn-light:hover, .btn-outline-light:hover {
-  background-color: #F7F4ED;
-  border-color: #F7F4ED;
-  box-shadow: none;
+  box-shadow: 0 1px 20px rgba(170, 170, 170, 0.5);
 }
 
 .btn-dark, .btn-outline-dark {
@@ -10062,7 +10055,7 @@ table td, table th {
 .btn-outline-theme-colored3,
 .btn-outline-theme-colored3,
 .btn-light, .btn-dark,
-.woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart):not([name=apply_coupon]), .woosw-item .button, .woosw-item .added_to_cart, .woosc_table .button, .woosc_table .added_to_cart {
+.woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart) {
   position: relative;
   z-index: 0;
 }
@@ -10075,21 +10068,17 @@ table td, table th {
 .btn-outline-theme-colored3:before,
 .btn-outline-theme-colored3:before,
 .btn-light:before, .btn-dark:before,
-.woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart):not([name=apply_coupon]):before, .woosw-item .button:before, .woosw-item .added_to_cart:before, .woosc_table .button:before, .woosc_table .added_to_cart:before {
-  content: "";
-  z-index: -1;
+.woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart):before {
   position: absolute;
-  left: -10px;
-  top: 0;
-  width: 26px;
-  height: 100%;
+  content: "";
   background: var(--theme-color3);
-  opacity: 0.2;
-  transform: skewX(22deg);
+  width: 0;
+  height: 100%;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  z-index: -1;
   transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
 }
 .btn-theme-colored1:hover:before, .btn-theme-colored1:focus:before,
 .btn-theme-colored2:hover:before,
@@ -10108,19 +10097,17 @@ table td, table th {
 .btn-outline-theme-colored3:focus:before,
 .btn-light:hover:before,
 .btn-light:focus:before, .btn-dark:hover:before, .btn-dark:focus:before,
-.woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart):not([name=apply_coupon]):hover:before,
-.woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart):not([name=apply_coupon]):focus:before, .woosw-item .button:hover:before, .woosw-item .button:focus:before, .woosw-item .added_to_cart:hover:before, .woosw-item .added_to_cart:focus:before, .woosc_table .button:hover:before, .woosc_table .button:focus:before, .woosc_table .added_to_cart:hover:before, .woosc_table .added_to_cart:focus:before {
-  opacity: 1;
-  left: 0;
+.woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart):hover:before,
+.woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart):focus:before {
   width: 100%;
-  transform: skewX(0deg);
+  opacity: 1;
 }
 
 .btn-light:before, .btn-dark:before {
-  background: var(--theme-color2);
+  background: var(--theme-color1);
 }
 .btn-light:hover, .btn-light:focus, .btn-dark:hover, .btn-dark:focus {
-  color: var(--text-color-bg-theme-color2);
+  color: var(--text-color-bg-theme-color1);
 }
 
 .btn-theme-colored3:before,
@@ -10170,7 +10157,7 @@ input[type=submit].btn-theme-colored4:hover, input[type=submit].btn-theme-colore
   text-transform: capitalize;
 }
 .btn-plain-text-with-arrow:before {
-  color: var(--theme-color2);
+  color: var(--theme-color1);
   display: inline-block;
   content: "\f35a";
   font-family: "Font Awesome 5 Free";
@@ -10190,10 +10177,10 @@ input[type=submit].btn-theme-colored4:hover, input[type=submit].btn-theme-colore
   }
 }
 .btn-plain-text-with-arrow:focus, .btn-plain-text-with-arrow:hover {
-  color: var(--theme-color2);
+  color: var(--theme-color1);
 }
 .btn-plain-text-with-arrow:focus:before, .btn-plain-text-with-arrow:hover:before {
-  color: var(--theme-color2);
+  color: var(--theme-color1);
   transform: rotateX(180deg);
   -webkit-animation: moveArrow 1s;
   -moz-animation: moveArrow 1s;
