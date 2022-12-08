@@ -26,21 +26,18 @@
 }
 
 
-.btn, .woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart):not([name=apply_coupon]), .woosw-item .button, .woosw-item .added_to_cart, .woosc_table .button, .woosc_table .added_to_cart {
-  font-size: var(--btn-font-size);
-  line-height: 1.4;
-  color: #ffffff;
-  padding: 1.2rem 3.7rem;
-  font-family: var(--font-current-theme1);
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  overflow: hidden;
-  text-align: center;
-  text-transform: uppercase;
-  border-radius: 0;
+.btn, .woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart) {
+  border-radius: 5px;
   border-width: 0;
+  font-size: $body-font-size;
+  font-weight: $body-font-bold;
+  line-height: $line-height-base;
+  letter-spacing: .05rem;
+  padding: 1.0rem 2.2rem;
   overflow: hidden;
+  text-transform: capitalize;
   display: inline-block;
+  white-space: nowrap;
   @include transition(all .2s ease-in-out);
   &.focus, &:focus {
     box-shadow: none !important;
@@ -48,14 +45,17 @@
   i {
     margin-right: 5px;
   }
+  @include media-breakpoint-down(sm) {
+    padding: 1.1rem 1.5rem;
+  }
 }
 .btn-group-xs > .btn, .btn-xs {
-  padding: 0.5rem 1.2rem;
-  font-size: 0.75rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.85rem;
 }
 .btn-group-sm > .btn, .btn-sm {
-  padding: 1rem 2.4rem;
-  font-size: 0.75rem;
+  padding: 0.75rem 1.7rem;
+  font-size: 0.9rem;
 }
 .btn-group-lg > .btn, .btn-lg {
   padding: 1.3rem 3.00rem;
@@ -76,18 +76,9 @@
 
 //btn hover
 .btn-light, .btn-outline-light {
-  background-color: #F7F4ED;
-  border-color: #F7F4ED;
-  box-shadow: none;
-  font-family: var(--font-current-theme1);
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 14px;
-  color: #164333;
+  box-shadow: 0 7px 20px rgba(#aaa,.2);
   &:hover {
-    background-color: #F7F4ED;
-    border-color: #F7F4ED;
-    box-shadow: none;
+    box-shadow: 0 1px 20px rgba(#aaa,.5);
   }
 }
 .btn-dark, .btn-outline-dark {
@@ -315,42 +306,36 @@
 .btn-outline-theme-colored3,
 .btn-outline-theme-colored3,
 .btn-light, .btn-dark,
-.woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart):not([name=apply_coupon]), .woosw-item .button, .woosw-item .added_to_cart, .woosc_table .button, .woosc_table .added_to_cart {
+.woocommerce .button:not(.compare):not(.yith-wcqv-button):not(.tm-btn-add-to-cart) {
   position: relative;
   z-index: 0;
   &:before {
-    content: "";
-    z-index: -1;
     position: absolute;
-    right: -10px;
-    top: 0;
-    width: 26px;
-    height: 100%;
+    content: '';
     background: var(--theme-color3);
-    opacity: .2;
-    transform: skewX(-22deg);
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: -1;
     transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -webkit-transition: all .5s ease;
-    -ms-transition: all .5s ease;
   }
   &:hover,
   &:focus {
     &:before {
-      opacity: 1;
-      right: 0;
       width: 100%;
-      transform: skewX(0deg);
+      opacity: 1;
     }
   }
 }
 .btn-light, .btn-dark {
   &:before {
-    background: var(--theme-color2);
+    background: var(--theme-color1);
   }
   &:hover,
   &:focus {
-    color: var(--text-color-bg-theme-color2);
+    color: var(--text-color-bg-theme-color1);
   }
 }
 .btn-theme-colored3,
@@ -407,7 +392,7 @@ input[type="submit"].btn-theme-colored4 {
   border: 0;
   text-transform: capitalize;
   &:before {
-    color: var(--theme-color2);
+    color: var(--theme-color1);
     display: inline-block;
     content: "\f35a";
     font-family: "Font Awesome 5 Free";
@@ -423,9 +408,9 @@ input[type="submit"].btn-theme-colored4 {
   }
 
   &:focus, &:hover {
-    color: var(--theme-color2);
+    color: var(--theme-color1);
     &:before {
-      color: var(--theme-color2);
+      color: var(--theme-color1);
       transform: rotateX(180deg);
       -webkit-animation: moveArrow 1s;
       -moz-animation: moveArrow 1s;
@@ -506,7 +491,7 @@ input[type="submit"].btn-theme-colored4 {
 .btn-hover-bg-white {
   &:hover,
   &:focus {
-    color: #333!important;
+  color: #333!important;
     &:before {
       background-color: #fff;
     }
